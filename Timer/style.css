@@ -1,0 +1,58 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: sans-serif;
+  background-color: #2d1338;
+}
+
+#time-container {
+  text-align: center;
+  width: 600px;
+}
+
+.timer {
+  color: white;
+  font-size: 45px;
+}
+#time-display {
+  font-size: 60px;
+  font-weight: 600;
+  letter-spacing: 5px;
+  padding: 30px 0px;
+  color: white;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+#time-container button {
+  background: #e57cd8;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.pointer-event {
+  pointer-events: none;
+}
+
+@media (max-width: 580px) {
+  #time-container {
+    width: 80%;
+    margin-top: 15%;
+    left: 10%;
+  }
+}

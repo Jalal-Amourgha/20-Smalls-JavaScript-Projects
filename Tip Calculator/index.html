@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tip Calculator</title>
+  </head>
+
+  <body>
+    <div class="box">
+      <h1 class="text-center">Tip Calculator</h1>
+      <div class="line"></div>
+      <div class="margin-bottom">
+        <label for="">Bill Amount</label><br />
+        <div class="text-center">
+          <span class="icon"> <i class="fa-solid fa-dollar-sign"></i> </span>
+          <input id="price" type="number" min="0" placeholder="Bill Amount" />
+        </div>
+      </div>
+      <div class="margin-bottom">
+        <label for="">Number of Guests</label><br />
+        <div class="text-center">
+          <span class="icon"><i class="fa-solid fa-user"></i></span>
+          <input
+            id="guests"
+            type="number"
+            min="1"
+            placeholder="Number of Guests"
+          />
+        </div>
+      </div>
+      <div>
+        <label for="">Service Quality</label> <br />
+        <select id="service">
+          <option disabled hidden selected>Choose...</option>
+          <option value="0.3">30% - Outstanding</option>
+          <option value="0.2">20% - Good</option>
+          <option value="0.15">15% - It was ok</option>
+          <option value="0.1">10% - Bad</option>
+          <option value="0.05">5% - Terrible</option>
+        </select>
+      </div>
+      <div class="line"></div>
+      <div class="text-center">
+        <button class="submit" onclick="calculate()">Calculate</button>
+      </div>
+    </div>
+
+    <div class="popup" id="popup">
+      <h4 id="message"></h4>
+    </div>
+  </body>
+  <script src="main.js"></script>
+  <script
+    src="https://kit.fontawesome.com/97220a04d8.js"
+    crossorigin="anonymous"
+  ></script>
+</html>
